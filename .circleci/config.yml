@@ -41,4 +41,4 @@ jobs:
     steps:
       - run:
           name: deploy-application
-          command: ssh -o StrictHostKeyChecking=no $
+          command: ssh -o StrictHostKeyChecking=no $EC2_USERNAME_PUBLIC_DNS "rm -rf ExampleApplication/;https://github.com/OrgGitMulc/pawsandprogress-ca-project.git; source ExampleApplication/deploy.sh"
