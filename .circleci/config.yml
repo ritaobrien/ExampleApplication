@@ -42,8 +42,3 @@ jobs:
       - run:
           name: deploy-application
           command: ssh -o StrictHostKeyChecking=no $EC2_USERNAME_PUBLIC_DNS "rm -rf ExampleApplication/;git clone https://github.com/RONCI/ExampleApplication.git; source ExampleApplication/deploy.sh"
-
-1
-2
-3
-4
